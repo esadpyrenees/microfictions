@@ -1,7 +1,7 @@
 <?php snippet('header') ?>
   
   <header>
-    <a href="<?= $site->url() ?>" class="home button">cromagnons:conversation</a>
+    <a href="<?= $site->url() ?>" class="home button">microfictions</a>
     <button id="shuffle" class="button">shuffle</button>
   </header>
   

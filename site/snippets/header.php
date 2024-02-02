@@ -12,15 +12,7 @@
 
   <?php snippet("header.metas") ?>
 
-  <?php
-    if ( option('environment') == 'local' ) :
-      foreach ( option('basic-devkit.assets.styles', array()) as $style):
-        echo css($style.'?version='.md5(uniqid(rand(), true)));
-      endforeach;
-    else:
-      echo css('assets/production/all.min.css');
-    endif
-  ?>
+  <?= css('assets/css/main.css'); ?>
 
   <style>
     ol { counter-reset: list <?= $conversation->count() + 1; ?>}
